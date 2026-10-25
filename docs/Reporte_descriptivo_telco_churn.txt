@@ -1,0 +1,88 @@
+REPORTE DESCRIPTIVO DEL DATAFRAME
+======================================================================
+
+1. DIMENSIONES DEL DATASET
+- Número de filas: 5000
+- Número de columnas: 18
+
+2. MUESTRA DE REGISTROS (primeras 5 filas)
+  CustomerID  Gender  Age  Tenure    ContractType InternetService  MonthlyCharges  TotalCharges     PaymentMethod  TechSupport  StreamingTV  OnlineSecurity  PaperlessBilling  Churn CategoriaTenure      GrupoEdad  TotalServicios         ServiciosContratados
+0  CUST00001    Male   68      16  Month-to-month     Fiber optic           63.46       1033.67  Electronic check            1            1               0                 0      1         Estable         Senior               2     TechSupport, StreamingTV
+1  CUST00002  Female   57      51  Month-to-month     Fiber optic           79.29       4064.48      Mailed check            1            1               0                 1      1        Muy Fiel  Adulto Maduro               2     TechSupport, StreamingTV
+2  CUST00003    Male   24      11  Month-to-month             DSL           69.53        748.64     Bank transfer            1            0               0                 1      1           Nuevo          Joven               1                  TechSupport
+3  CUST00004    Male   49      47  Month-to-month     Fiber optic           95.02       4527.19  Electronic check            1            0               0                 1      1            Fiel         Adulto               1                  TechSupport
+4  CUST00005    Male   65      21  Month-to-month     Fiber optic           59.70       1272.96  Electronic check            0            1               1                 1      1         Estable  Adulto Maduro               2  StreamingTV, OnlineSecurity
+
+3. NOMBRES Y TIPOS DE COLUMNAS
+- CustomerID: object
+- Gender: object
+- Age: int64
+- Tenure: int64
+- ContractType: object
+- InternetService: object
+- MonthlyCharges: float64
+- TotalCharges: float64
+- PaymentMethod: object
+- TechSupport: int64
+- StreamingTV: int64
+- OnlineSecurity: int64
+- PaperlessBilling: int64
+- Churn: int64
+- CategoriaTenure: category
+- GrupoEdad: category
+- TotalServicios: int64
+- ServiciosContratados: object
+
+4. VALORES NULOS POR COLUMNA
+- CustomerID: 0
+- Gender: 0
+- Age: 0
+- Tenure: 0
+- ContractType: 0
+- InternetService: 0
+- MonthlyCharges: 0
+- TotalCharges: 0
+- PaymentMethod: 0
+- TechSupport: 0
+- StreamingTV: 0
+- OnlineSecurity: 0
+- PaperlessBilling: 0
+- Churn: 0
+- CategoriaTenure: 0
+- GrupoEdad: 0
+- TotalServicios: 0
+- ServiciosContratados: 0
+
+5. REGISTROS DUPLICADOS
+- Duplicados encontrados: 0
+
+6. LONGITUD DE LOS CAMPOS (CARACTERES)
+- CustomerID: mínimo=9, máximo=9, promedio=9.00
+- Gender: mínimo=4, máximo=6, promedio=5.00
+- Age: mínimo=2, máximo=2, promedio=2.00
+- Tenure: mínimo=1, máximo=2, promedio=1.86
+- ContractType: mínimo=8, máximo=14, promedio=11.51
+- InternetService: mínimo=2, máximo=11, promedio=6.83
+- MonthlyCharges: mínimo=4, máximo=6, promedio=4.91
+- TotalCharges: mínimo=3, máximo=7, promedio=6.60
+- PaymentMethod: mínimo=11, máximo=16, promedio=13.04
+- TechSupport: mínimo=1, máximo=1, promedio=1.00
+- StreamingTV: mínimo=1, máximo=1, promedio=1.00
+- OnlineSecurity: mínimo=1, máximo=1, promedio=1.00
+- PaperlessBilling: mínimo=1, máximo=1, promedio=1.00
+- Churn: mínimo=1, máximo=1, promedio=1.00
+- CategoriaTenure: mínimo=4, máximo=8, promedio=5.98
+- GrupoEdad: mínimo=5, máximo=13, promedio=7.42
+- TotalServicios: mínimo=1, máximo=1, promedio=1.00
+- ServiciosContratados: mínimo=0, máximo=40, promedio=13.25
+
+7. ESTADÍSTICAS DESCRIPTIVAS DE VARIABLES NUMÉRICAS
+           Age   Tenure  MonthlyCharges  TotalCharges  TechSupport  StreamingTV  OnlineSecurity  PaperlessBilling    Churn  TotalServicios
+count  5000.00  5000.00         5000.00       5000.00      5000.00      5000.00         5000.00           5000.00  5000.00         5000.00
+mean     48.17    35.34           58.71       2076.29         0.31         0.39            0.35              0.70     0.45            1.05
+std      17.88    20.72           16.79       1401.16         0.46         0.49            0.48              0.46     0.50            0.82
+min      18.00     0.00           20.00       -145.98         0.00         0.00            0.00              0.00     0.00            0.00
+25%      33.00    17.00           46.40        923.12         0.00         0.00            0.00              0.00     0.00            0.00
+50%      48.00    35.00           57.66       1891.09         0.00         0.00            0.00              1.00     0.00            1.00
+75%      64.00    53.00           70.50       3007.38         1.00         1.00            1.00              1.00     1.00            2.00
+max      79.00    71.00          120.00       7695.88         1.00         1.00            1.00              1.00     1.00            3.00
