@@ -104,7 +104,7 @@ class Reportes:
         if not numericas.empty:
             lineas.extend([
                 "",
-                "6. ESTADÍSTICAS DESCRIPTIVAS DE VARIABLES NUMÉRICAS",
+                "7. ESTADÍSTICAS DESCRIPTIVAS DE VARIABLES NUMÉRICAS",
                 numericas.describe().round(2).to_string()
             ])
 
